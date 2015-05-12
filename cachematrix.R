@@ -5,7 +5,7 @@
 ## makeCacheMatrix: Creates a special "matrix" object that can cache its inverse.
 ## The object is a list containing functions to (1) get the original matrix values,
 ## (2) set its inverted values and (3) get the inverted values. I reused much of the 
-## makeVector excample, but removed the set function which wasn't needed.
+## makeVector example, but removed the set function which wasn't needed.
 
 makeCacheMatrix <- function(x = matrix()) {
         inv <- NULL
