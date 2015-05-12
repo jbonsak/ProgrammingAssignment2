@@ -4,7 +4,8 @@
 
 ## makeCacheMatrix: Creates a special "matrix" object that can cache its inverse.
 ## The object is a list containing functions to (1) get the original matrix values,
-## (2) set its inverted values and (3) get the inverted values.
+## (2) set its inverted values and (3) get the inverted values. I reused much of the 
+## makeVector excample, but removed the set function which wasn't needed.
 
 makeCacheMatrix <- function(x = matrix()) {
         inv <- NULL
@@ -18,7 +19,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## cacheSolve: Computes the inverse of the special "matrix" returned by makeCacheMatrix above
-## Error is thrown for non-invertible matrixes (singular or not square - I found a place to  
+## Error is thrown for non-invertible matrices (singular or not square - I found a place to  
 ## relearn this the fun way at http://www.mathsisfun.com/algebra/matrix-inverse.html).
 
 cacheSolve <- function(x, ...) {
